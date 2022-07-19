@@ -41,4 +41,4 @@ RUN apt-get purge -y gcc python3-dev && apt-get autoremove -y
 
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
 
-CMD ["ospd-openvas", "--disable-notus-hashsum-verification", "--config", "/etc/gvm/ospd-openvas.conf", "-f", "-m", "666"]
+CMD ["ospd-openvas", "--disable-notus-hashsum-verification = true", "--config", "/etc/gvm/ospd-openvas.conf", "-f", "-m", "666"]
